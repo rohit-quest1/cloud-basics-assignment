@@ -71,4 +71,24 @@ const getAllOrders = async (req, res) => {
     }
 };
 
-module.exports = { getOrder, createOrder, updateOrder, getAllOrders };
+const deleteOrder = async (req, res) => {
+    const { id } = req.params;
+
+    try {
+        const result = await pool.query(
+            'DELETE FROM orders WHERE id = $1',
+            [id]
+        );
+
+        if (result.rowCount === 0) {
+            return res.status(404).json({ error: 'Order not found' });
+        }
+
+        res.status(204).send();
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+};
+
+module.exports = { getOrder, createOrder, updateOrder, getAllOrders, deleteOrder };

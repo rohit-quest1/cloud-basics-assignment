@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { createOrder, updateOrder, getOrder, getAllOrders } = require('../controllers/orders');
+const { createOrder, updateOrder, getOrder, getAllOrders, deleteOrder } = require('../controllers/orders');
 const { authenticateToken } = require('../middleware/auth');
 
 /**
@@ -171,5 +171,32 @@ router.get('/:id', authenticateToken, getOrder);
  *         description: Internal server error
  */
 router.get('/', authenticateToken, getAllOrders);
+
+/**
+ * @swagger
+ * /api/orders/{id}:
+ *   delete:
+ *     summary: Delete an order
+ *     tags: [Orders]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: ID of the order to delete
+ *     responses:
+ *       204:
+ *         description: Order deleted successfully
+ *       401:
+ *         description: Unauthorized access
+ *       404:
+ *         description: Order not found
+ *       500:
+ *         description: Internal server error
+ */
+router.delete('/:id', authenticateToken, deleteOrder);
 
 module.exports = router;
