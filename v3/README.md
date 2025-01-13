@@ -40,7 +40,10 @@ password: admin
 ## General Bonus Ideas (Optional for all versions):
 
 1. **Logging and Monitoring:** Set up **AWS CloudWatch** to monitor the app’s logs and performance metrics (e.g., for EC2 or Lambda). This will teach you how to monitor and debug your cloud applications.
+    - Enabled CloudWatch for RDS database.
+    - The server keeps logging data using the logger middleware implemented
 2. **Error Handling:** Implement proper error handling across the application, ensuring that meaningful error messages are returned to the client when something goes wrong.
+    - Every route has been returned with a proper response message which is displayed in the frontend with the help of a toaster from sonner.
 
 ---
 
