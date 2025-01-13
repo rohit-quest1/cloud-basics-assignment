@@ -21,4 +21,6 @@ Enhance the application by adding the ability to upload and store product images
 **Bonus (Optional):**
 - Add functionality to delete the product image from S3 when deleting a product.
 ![image](https://github.com/user-attachments/assets/babebc2a-4a6b-4cea-aa5b-ce075bd511b5)
+<img width="996" alt="image" src="https://github.com/user-attachments/assets/12be81fa-396f-49bb-b326-d81d9ca564c8" />
+
 
