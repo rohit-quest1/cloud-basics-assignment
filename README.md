@@ -2,6 +2,9 @@
 
 This exercise will help you build and deploy a simple web application, taking you through the steps of backend development, cloud deployment, and frontend integration. You'll start by creating a basic web application and progressively deploy and enhance it using AWS cloud services.
 
+[Live Link to Application](https://main.d2nqntl6coijj2.amplifyapp.com/signup)
+*Note: Each Folder in the repo contains screenshots and approach specific to it.*
+
 ## Version-0: Build a Simple Web Application
 
 **Objective:**  
