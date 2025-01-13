@@ -11,7 +11,7 @@ Create a simple front-end web interface to interact with your backend, allowing 
 - The UI should consume the backend APIs to fetch, create, update, and delete data (via RESTful calls).
 
 **Live Link:**
-- The application is running in (Link to Website)[https://main.d2nqntl6coijj2.amplifyapp.com/signup]
+- The application is running in [Link to Website](https://main.d2nqntl6coijj2.amplifyapp.com/signup)
 - You can login as Admin by using the credentials
 ```
 email: admin@admin.com
