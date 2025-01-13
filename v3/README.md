@@ -17,7 +17,8 @@ Create a simple front-end web interface to interact with your backend, allowing 
 email: admin@admin.com
 password: admin
 ```
-- If you want to sign up go ahead and sign up as an user.
+to access all the Admin functionalities.
+- If you want to Login as an user, go ahead and Sign Up.
 
 **My Approach:**  
 - I built the frontend application using React with Tremor Components for styling and Redux for state management.
