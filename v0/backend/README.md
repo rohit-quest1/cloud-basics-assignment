@@ -44,6 +44,8 @@ Develop a basic RESTful web application with the following functionalities:
 
 - For the local datastore, use **MySQL** or **PostgreSQL** to persist the data. You may choose whichever you're most comfortable with. If needed, provide an example schema for Users, Products, and Orders.
 - Feel free to add any additional features (pagination, error handling) based on your knowledge.
+- ![image](https://github.com/user-attachments/assets/c8c0104e-3cf1-4833-8ca1-3fb15a23d5c3)
+
 
 **Bonus (Optional):**
 - Implement basic **input validation** for each endpoint (e.g., required fields for creating users/products/orders, valid data types, etc.).
