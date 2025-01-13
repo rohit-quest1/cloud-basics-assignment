@@ -10,8 +10,14 @@ Create a simple front-end web interface to interact with your backend, allowing 
 - Host the UI as a static website on **AWS S3**.
 - The UI should consume the backend APIs to fetch, create, update, and delete data (via RESTful calls).
 
+**My Approach:**  
+- I built the frontend application using React with Tremor Components for styling and   
+
+
 **Bonus (Optional):**
 - Add **client-side validation** for form inputs (e.g., check if a field is empty before submission).
+![image](https://github.com/user-attachments/assets/b4823837-6813-4d2b-995f-a8866b985085)
+
 
 ---
 
