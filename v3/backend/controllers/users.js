@@ -6,7 +6,6 @@ const jwt = require('jsonwebtoken');
 
 const createUser = async (req, res) => {
   
-    console.log(req.body);
     const { username, password, email } = req.body;
 
     if (!username || !password || !email) {
@@ -17,13 +16,11 @@ const createUser = async (req, res) => {
 
     try {
 
-        console.log(hashedPassword);
       
         const result = await pool.query(
             'INSERT INTO users (username, password, email) VALUES ($1, $2, $3) RETURNING *',
             [username, hashedPassword, email]
         );
-        console.log("check");
         const token = jwt.sign({ id: result.rows[0].id }, process.env.JWT_SECRET, { expiresIn: '1h' });
         res.status(201).json({ user: result.rows[0], token });
     } catch (error) {

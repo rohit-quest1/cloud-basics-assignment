@@ -8,7 +8,8 @@ const productRoutes = require('./routes/products');
 const orderRoutes = require('./routes/orders');
 const upload = require('./middleware/upload');
 const cors = require('cors');
-
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpecs = require('./middleware/swagger');
 
 const app = express();
 const PORT = process.env.PORT || 8000;
@@ -24,6 +25,7 @@ app.use(cors({
 // Middleware for parsing requests
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs));
 
 // Routes
 app.use('/api/users', userRoutes);

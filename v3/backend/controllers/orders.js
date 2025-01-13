@@ -1,7 +1,6 @@
 const {pool} = require('../config');
 
 const createOrder = async (req, res) => {
-    console.log("hiiiiiiiiiiiii");
 
     const { userId, productId, quantity } = req.body;
     try {
@@ -39,14 +38,12 @@ const updateOrder = async (req, res) => {
 
 const getOrder = async (req, res) => {
     const { id } = req.params;
-    console.log(id)
     try {
         const result = await pool.query(`
             SELECT o.*, p.name as product_name 
             FROM orders o
             JOIN products p ON o.product_id = p.id
             WHERE o.user_id = $1`, [id]);
-        console.log(result.rows[0])
         if (result.rowCount === 0) {
             return res.status(404).json({ error: 'Order not found' });
         }

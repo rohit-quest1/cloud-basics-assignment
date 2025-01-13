@@ -32,14 +32,12 @@ const validateProduct = (req, res, next) => {
 };
 
 const validateOrder = (req, res, next) => {
-    console.log("inside validate")
     const schema = Joi.object({
         productId: Joi.number().positive().required(),  // Ensure productId is a positive number
         quantity: Joi.number().integer().min(1).required(),  // Ensure quantity is a positive integer
     });
 
     const { error } = schema.validate(req.body);
-    console.log(error)
     if (error) {
         return res.status(400).json({ error: error.details[0].message });
     }
