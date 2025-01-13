@@ -32,6 +32,7 @@ password: admin
 
 **Bonus (Optional):**
 - Add **client-side validation** for form inputs (e.g., check if a field is empty before submission).
+  
 ![image](https://github.com/user-attachments/assets/b4823837-6813-4d2b-995f-a8866b985085)
 
 
