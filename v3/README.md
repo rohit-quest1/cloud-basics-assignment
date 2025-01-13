@@ -52,5 +52,5 @@ to access all the Admin functionalities.
 ---
 
 ## Final Notes:
-- **Documentation:** Encourage you to document your work well. This includes creating API documentation for the backend (Using tools like Postman or Swagger for API documentation).
+- **Documentation:** Encourage you to document your work well. This includes creating API documentation for the backend (Using tools like Postman or Swagger for API documentation). [Link to Swagger UI](https://13.127.23.163/api-docs)
 - **Security Best Practices:** Reminder to consider **security best practices** such as proper permissions, securing the S3 bucket access etc.,
