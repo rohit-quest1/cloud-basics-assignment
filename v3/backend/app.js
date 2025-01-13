@@ -16,12 +16,13 @@ const PORT = process.env.PORT || 8000;
 
 // Middleware for logging
 app.use(logger);
-app.use(cors({
-    origin: process.env.NODE_ENV === 'production' 
-      ? 'your-production-domain.com'
-      : 'http://localhost:5173',
-    credentials: true
-  }));
+const corsOptions ={
+  origin:'*',
+  credentials:true,            //access-control-allow-credentials:true
+  optionSuccessStatus:200,
+}
+
+app.use(cors(corsOptions))
 // Middleware for parsing requests
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
