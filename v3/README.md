@@ -10,8 +10,24 @@ Create a simple front-end web interface to interact with your backend, allowing 
 - Host the UI as a static website on **AWS S3**.
 - The UI should consume the backend APIs to fetch, create, update, and delete data (via RESTful calls).
 
+**Live Link:**
+- The application is running in (Link to Website)[https://main.d2nqntl6coijj2.amplifyapp.com/signup]
+- You can login as Admin by using the credentials
+```
+email: admin@admin.com
+password: admin
+```
+- If you want to sign up go ahead and sign up as an user.
+
 **My Approach:**  
-- I built the frontend application using React with Tremor Components for styling and   
+- I built the frontend application using React with Tremor Components for styling and Redux for state management.
+- I used AWS amplify to deploy the application.
+- I have implemented Role Based Access Control (Admin/User)
+- The Admin can do all the operations related to the product and view all the orders in his respective dashboard.
+- The User can view all the available products and place an order which is later displayed in the My Orders Page. Additionaly the User can also edit his personal information in the Profile Page.
+
+
+
 
 
 **Bonus (Optional):**
