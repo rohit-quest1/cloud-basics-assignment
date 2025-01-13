@@ -5,4 +5,11 @@ This exercise will help you build and deploy a simple web application, taking yo
 ### [Live Link to Application](https://main.d2nqntl6coijj2.amplifyapp.com/signup)
 #### Important Note: Before Using the Frontend URL, Make sure to open [Backend API](https://13.127.23.163/) and click Advanced and then Proceed. This has to be done since the backend EC2 instance contains a self signed certificate.
 
+- You can login as Admin by using the credentials
+```
+email: admin@admin.com
+password: admin
+```
+- If you want to sign up go ahead and sign up as an user.
+  
 #### *Note: Each Folder in the repo contains screenshots and approach specific to it.*
