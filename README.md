@@ -3,6 +3,7 @@
 This exercise will help you build and deploy a simple web application, taking you through the steps of backend development, cloud deployment, and frontend integration. You'll start by creating a basic web application and progressively deploy and enhance it using AWS cloud services.
 
 ### [Live Link to Application](https://main.d2nqntl6coijj2.amplifyapp.com/signup)
+### [Swagger API](https://13.127.23.163/api-docs)
 #### Important Note: Before Using the Frontend URL, Make sure to open [Backend API](https://13.127.23.163/) and click Advanced and then Proceed. This has to be done since the backend EC2 instance contains a self signed certificate.
 
 **Usage**
