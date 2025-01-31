@@ -4,9 +4,12 @@ import {  useSelector, useDispatch } from "react-redux";
 
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
+import Dashboard from "./pages/Dashboard";
 import AdminDashboard from "./pages/AdminDashboard";
+import AdminOrders from "./pages/AdminOrders";
 import { RootState } from "./redux/store";
-
+import Orders from "./pages/Orders";
+import Profile from "./pages/Profile";
 import { useEffect } from "react";
 import { logout , setCredentials} from "./redux/authSlice";
 
@@ -59,6 +62,40 @@ function App() {
             </PrivateRoute>
           }
         />
+        <Route
+          path="/admin/orders"
+          element={
+            <PrivateRoute requiredRole="admin">
+              <AdminOrders />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="/dashboard"
+          element={
+            <PrivateRoute requiredRole="user">
+              <Dashboard />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/orders"
+          element={
+            <PrivateRoute requiredRole="user">
+              <Orders />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/profile"
+          element={
+            <PrivateRoute requiredRole="user">
+              <Profile />
+            </PrivateRoute>
+          }
+        />
+
         <Route path="*" element={<Navigate to="/signup" />} />
       </Routes>
     
